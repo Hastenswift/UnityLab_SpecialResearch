@@ -23,6 +23,11 @@ public class SnapToGridScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
+    	if(grid<=0f)
+	{
+	grid=1f;
+	}//defaulting to 1
+	
         if (grid > 0f)
         {
             float reciprocalGrid = 1f / grid;
