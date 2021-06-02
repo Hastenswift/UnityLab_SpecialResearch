@@ -10,7 +10,7 @@ using UnityEngine;
 //Mathf.Round  2.954 => 3
 //then what we get we divide with reciprocal value      3/2 = 1.5
 //snapped!
-
+//
 
 [ExecuteInEditMode]
 public class SnapToGridScript : MonoBehaviour {
