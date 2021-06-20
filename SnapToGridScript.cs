@@ -18,7 +18,7 @@ public class SnapToGridScript : MonoBehaviour {
 
     public float grid = 0.5f;  //greater then 0
 
-    float x = 0f, y = 0f;//wanted position
+    float x = 0f, y = 0f, z=0f;//wanted position
 
 
 	// Update is called once per frame
@@ -35,8 +35,8 @@ public class SnapToGridScript : MonoBehaviour {
 
             x = Mathf.Round(transform.position.x * reciprocalGrid) / reciprocalGrid;
             y = Mathf.Round(transform.position.y * reciprocalGrid) / reciprocalGrid;
-
-            transform.position = new Vector3(x, y, transform.position.z);
+            z = Mathf.Round(transform.position.z * reciprocalGrid) / reciprocalGrid;
+            transform.position = new Vector3(x, y, z);
         }
     }
 }
